@@ -1,0 +1,214 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Nanum Gothic Coding';
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    z-index: 1;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+}
+
+video {
+    width: 100vw;
+    position: absolute;
+}
+
+a {
+    color: gray;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
+
+nav .name {
+    font-size: 30px;
+    padding-left: 20px;
+}
+
+nav .menuContainer {
+    display: flex;
+    width: 600px;
+    align-items: center;
+}
+
+nav .menuContainer .menu {
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+footer {
+    background-color: beige;
+}
+
+footer img {
+    margin: 0 75px;
+}
+
+.img {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about {
+    background-image: url(./about.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about .container {
+    height: 500px;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about .container .items {
+    width: 30%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: beige;
+    opacity: 0.9;
+}
+
+.about .container .items .head {
+    font-size: 20px;
+}
+
+.about .container .items .contents {
+    line-height: 30px;
+}
+
+.home .memoji {
+    width: 300px;
+    height: 300px;
+    background-image: url(./memoji.png);
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.home .memoji:hover {
+    background-image: url(./memoji2.png);
+}
+
+.about .container .items .img {
+    width: 100%;
+    height: 30%;
+}
+
+.about .container .items .img1{
+    background-image: url(./image1.png);
+}
+
+.about .container .items .img2{
+    background-image: url(./image2.png);
+}
+
+.about .container .items .img3{
+    background-image: url(./image3.png);
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:aliceblue;
+}
+
+.home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home .contents {
+    padding: 300px 0;
+    font-size: 50px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 200px;
+    justify-content: space-around;
+}
+
+
+.favorites {
+    background-color: burlywood;
+}
+
+.favorites .gridContainer {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+    grid-template-rows: 50vh 50vh;
+    justify-content: space-between;
+}
+
+.favorites .gridContainer .img {
+    background-size: cover;
+}
+
+.favorites .gridContainer .f1 {
+    background-image: url(./f1.jpeg);
+}
+
+.favorites .gridContainer .f2 {
+    background-image: url(./f2.jpeg);
+}
+
+.favorites .gridContainer .f3 {
+    background-image: url(./f3.jpeg);
+}
+
+.favorites .gridContainer .f4 {
+    background-image: url(./f4.jpeg);
+}
+
+.favorites .gridContainer .f5 {
+    background-image: url(./f5.jpg);
+}
+
+.favorites .gridContainer .f6 {
+    background-image: url(./f6.jpeg);
+}
+
+.favorites .gridContainer .f7 {
+    background-image: url(./f7.gif);
+}
+
+.favorites .gridContainer .f8 {
+    background-image: url(./f8.jpg);
+}
+
