@@ -15,8 +15,32 @@ nav {
     width: 100%;
     justify-content: space-between;
     border-bottom: 1px solid black;
-    z-index: 1;
+    z-index: 2;
+    background-color: white;
 }
+
+video {
+   object-fit: cover;
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+}
+
+path {
+    stroke-dasharray: 200;
+    stroke-dashoffset: 200;
+    animation: dash 6s linear alternate infinite;
+ }
+
+ @keyframes dash {
+   from {
+     stroke-dashoffset: 200;
+   }
+   to {
+     stroke-dashoffset: 0;
+   }
+ }
 
 .bold {
     font-weight: bold;
@@ -83,8 +107,8 @@ footer img {
 }
 
 .about .container {
-    height: 500px;
-    width: 80%;
+    height: 50vw;
+    width: 90vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -101,18 +125,20 @@ footer img {
 }
 
 .about .container .items .head {
-    font-size: 20px;
+    font-size: 1.5vw;
 }
 
 .about .container .items .contents {
-    line-height: 30px;
+    line-height: 2vw;
+    font-size: 1vw;
 }
 
 .home .memoji {
-    width: 300px;
-    height: 300px;
+    width: 25vw;
+    height: 25vw;
     background-image: url(./memoji.png);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     position: relative;
     z-index: 1;
 }
@@ -151,18 +177,21 @@ footer img {
     align-items: center;
 }
 
-.home .contents {
+.home .desktop {
     padding: 300px 0;
-    font-size: 50px;
-    position: relative;
+    font-size: 4vw;
     z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    height: 200px;
+    height: 20vw;
     justify-content: space-around;
 }
 
+.home .tablet {
+    font-size: 4vw;
+    z-index: 1;
+}
 
 .favorites {
     background-color: burlywood;
@@ -193,7 +222,20 @@ footer img {
 }
 
 .favorites .gridContainer .f4 {
-    background-image: url(./f4.jpeg);
+    background-image: url(./f4before.jpg);
+}
+
+.favorites .gridContainer .f4:hover {
+    animation: wss 1s linear;
+}
+
+@keyframes wss {
+    from {
+
+    }
+    to {
+        background-image: url(./f4.jpeg);
+    }
 }
 
 .favorites .gridContainer .f5 {
@@ -212,3 +254,45 @@ footer img {
     background-image: url(./f8.jpg);
 }
 
+@media only screen and (max-width: 800px) {
+    .home .desktop {
+        display: none;
+    }
+
+    .home .tablet {
+        display: block;
+    }
+
+}
+
+@media only screen and (min-width: 800px) {
+    .home .desktop {
+        display: flex;
+    }
+
+    .home .tablet {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 430px) {
+    .about .container {
+        height: 120vw;
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .about .container .items {
+        width: 30%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: beige;
+        opacity: 0.9;
+    }
+}

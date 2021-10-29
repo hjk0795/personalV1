@@ -12,11 +12,17 @@
       href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
   </head>
   <body>
     <header>
       <nav>
-        <div class="name">HJ KIM</div>
+        <div class="name">
+          <svg width="117" height="29" viewBox="0 0 117 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21.9023 27.5H22.4023V27V1.40625V0.90625H21.9023H16.6289H16.1289V1.40625V11.2773H6.8457V1.40625V0.90625H6.3457H1.07227H0.572266V1.40625V27V27.5H1.07227H6.3457H6.8457V27V16.5312H16.1289V27V27.5H16.6289H21.9023ZM36.8438 0.90625H36.3438V1.40625V19.125C36.3438 20.3297 36.0618 21.181 35.569 21.7511C35.0768 22.3206 34.4184 22.6152 33.5391 22.6152C32.4829 22.6152 31.8154 22.3385 31.4179 21.8879C31.0063 21.4215 30.752 20.64 30.752 19.4414V18.9414H30.252H24.9434H24.4434V19.4414C24.4434 22.0665 25.2351 24.1652 26.8735 25.6639L26.875 25.6653C28.5053 27.1439 30.7492 27.8516 33.5391 27.8516C35.2619 27.8516 36.8247 27.4967 38.2163 26.776C39.6108 26.0539 40.6962 25.0268 41.4603 23.6993C42.2361 22.3602 42.6172 20.8305 42.6172 19.125V1.40625V0.90625H42.1172H36.8438ZM61.373 11.4736V1.40625V0.90625H60.873H55.5996H55.0996V1.40625V27V27.5H55.5996H60.873H61.373V27V19.8838L63.5423 17.5477L69.7684 27.2696L69.9159 27.5H70.1895H76.4648H77.3921L76.8826 26.7253L67.7305 12.8079L76.5918 1.71838L77.2407 0.90625H76.2012H69.7148H69.4697L69.3195 1.10008L62.7981 9.52L62.7936 9.52572L62.7894 9.53156L61.373 11.4736ZM84.0586 27.5H84.5586V27V1.40625V0.90625H84.0586H78.7852H78.2852V1.40625V27V27.5H78.7852H84.0586ZM96.3248 1.23933L96.2069 0.90625H95.8535H88.9629H88.4629V1.40625V27V27.5H88.9629H94.2363H94.7363V27V20.0039V19.993L94.7358 19.9821L94.3514 11.1922L100.129 27.17L100.249 27.5H100.6H104.221H104.571L104.691 27.1703L110.487 11.1683L110.102 19.9821L110.102 19.993V20.0039V27V27.5H110.602H115.893H116.393V27V1.40625V0.90625H115.893H108.967H108.613L108.495 1.24012L102.426 18.4675L96.3248 1.23933Z" stroke="black"/>
+            </svg>
+        </div>
         <div class="menuContainer">
           <div class="menu">
             <a href="#home">HOME</a>
@@ -32,15 +38,21 @@
     </header>
 
     <section class="home" id="home">
-      <video muted autoplay loop>
+      <video muted loop autoplay>
         <source src="./video1.mp4" type="video/mp4" />
       </video>
-      <div class="contents">
+      <div class="contents desktop">
         <span class="bold">안녕하세요?</span>
         <span>28기 김홍주입니다</span>
       </div>
 
+      <div class="contents tablet mobile">
+        <span class="bold">28기 김홍주</span>
+      </div>
+
+      <div class="memojiContainer">
       <div class="memoji"></div>
+    </div>
     </section>
 
     <section class="about" id="about">
@@ -103,8 +115,7 @@
     </section>
 
     <footer>
-        <img src="./github.png" alt="github icon" width="75px" height="75px">
-        <img src="./velogIcon.png" alt="velog icon" width="75px" height="75px">
+        <a href="https://github.com/hjk0795" target="_blank"><i class="fa fa-github fa-5x"></i></a>
     </footer>
   </body>
 </html>
